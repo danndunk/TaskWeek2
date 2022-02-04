@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Poppins&display=swap");
+    </style>
+    <link rel="stylesheet" href="contact.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="left-navbar">
+        <a href="../../index.html">
+          <img src="../image/logo.png" alt="dumbways" />
+        </a>
+
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../myProject/myproject.html">My Project</a></li>
+        </ul>
+      </div>
+      <div class="right-navbar">
+        <a href="contact.html">Contact Me</a>
+      </div>
+    </nav>
+
+    <div class="formulir">
+      <h1>GET IN TOUCH</h1>
+      <form action="">
+        <div class="inname">
+          <label for="input-name">Name</label>
+          <input type="text" id="input-name" />
+        </div>
+        <div class="inemail">
+          <label for="input-email">Email</label>
+          <input type="email" id="input-email" />
+        </div>
+        <div class="inphonenumber">
+          <label for="input-phonenumber">Phone Number</label>
+          <input type="text" id="input-phonenumber" />
+        </div>
+        <div class="subject">
+          <label for="input-subject">Subject</label>
+          <select name="" id="input-subject">
+            <option value="" selected disabled></option>
+            <option value="Lets play">Lets play</option>
+            <option value="Lets study">Lets study</option>
+            <option value="Lets go">Lets go</option>
+          </select>
+        </div>
+        <div class="message">
+          <label for="input-message">Your Message</label>
+          <textarea
+            name=""
+            id="input-message"
+            cols="30"
+            rows="6"
+            placeholder="type your message"
+          ></textarea>
+        </div>
+        <button class="submit" type="button" onclick="showData()">
+          submit
+        </button>
+      </form>
+    </div>
+
+    <script src="contact.js"></script>
+  </body>
+</html>

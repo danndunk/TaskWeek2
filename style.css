@@ -1,0 +1,149 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Dongle", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+/* navbar */
+nav {
+  display: flex;
+  background-color: #f4f3f3;
+  height: 7vh;
+}
+
+.left-navbar {
+  padding-left: 90px;
+}
+
+.right-navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 90px;
+}
+
+nav div {
+  flex: 50%;
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  padding-left: 40px;
+}
+
+nav ul li .home {
+  font-weight: bold;
+}
+
+nav .right-navbar a {
+  color: white;
+  background-color: #111727;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+/* content */
+.personal {
+  display: flex;
+  height: 93vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2e6ea;
+}
+
+.personal .profile {
+  display: flex;
+  width: 75%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgb(138, 136, 136);
+}
+
+.personal .profile .left-content {
+  width: 60%;
+  padding: 100px 30px 100px 50px;
+}
+
+.personal .left-content h2 {
+  margin-bottom: 30px;
+}
+
+.personal .left-content p {
+  text-align: justify;
+}
+
+.personal .left-content .contactandcv .contac {
+  text-decoration: none;
+  color: white;
+  background-color: #111727;
+  padding: 5px 20px;
+  border-radius: 35px;
+  background-color: #111727;
+}
+
+.personal .left-content .contactandcv img {
+  height: 15px;
+}
+
+.personal .left-content .contactandcv {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.personal .left-content .contactandcv p {
+  margin-left: 15px;
+}
+
+.personal .left-content .contactandcv .downloads {
+  margin-left: 5px;
+}
+
+.personal .left-content .socialmedia {
+  margin-top: 45px;
+}
+
+.personal .left-content .socialmedia img {
+  height: 35px;
+  margin-right: 25px;
+}
+
+.personal .profile .right-content {
+  width: 40%;
+  padding: 60px;
+}
+
+.personal .right-content .photo {
+  background-color: #f8f5f5;
+  box-shadow: 0px 0px 20px #a7a6a6;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.personal .right-content .photo img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.personal .right-content .photo h3 {
+  margin-top: 10px;
+}
+
+.personal .right-content .photo p {
+  padding-bottom: 20px;
+}

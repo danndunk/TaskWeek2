@@ -1,0 +1,333 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Dongle", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+/* navbar */
+nav {
+  display: flex;
+  background-color: #f4f3f3;
+  height: 7vh;
+}
+
+.left-navbar {
+  padding-left: 90px;
+}
+
+.right-navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 90px;
+}
+
+nav div {
+  flex: 50%;
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  padding-left: 40px;
+}
+
+nav ul li .home {
+  font-weight: bold;
+}
+
+nav .right-navbar a {
+  color: white;
+  background-color: #111727;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+/* Project */
+
+.project-form {
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+  background-color: #e3e7eb;
+}
+
+.project-form .form-container {
+  width: 50%;
+}
+
+.project-form form h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-form form label {
+  font-weight: 600;
+}
+
+.project-form form input,
+textarea,
+.project-form form .technologies input {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.project-form form .project-name input,
+.project-form form .date input,
+.project-form form .description input,
+.project-form form textarea {
+  width: 100%;
+  border-radius: 4px;
+  padding: 8px;
+  border: none;
+  box-shadow: 0px 0px 4px rgb(150, 147, 147);
+}
+
+.project-form form textarea {
+  resize: none;
+}
+
+.project-form .date {
+  display: flex;
+}
+
+.project-form .date input {
+  cursor: pointer;
+}
+
+.project-form .date div {
+  width: 50%;
+}
+
+.project-form .date .startdate {
+  padding-right: 8px;
+}
+
+.project-form .date .enddate {
+  padding-left: 8px;
+}
+
+.project-form form .technologies-container {
+  display: flex;
+  margin-top: 10px;
+}
+
+.project-form form .technologies-container label {
+  margin-left: 10px;
+  color: #514a4a;
+}
+
+.project-form form .technologies-container .left-choose {
+  margin-right: 80px;
+}
+
+.project-form .form-container .input-project-image-group {
+  width: 100%;
+  background-color: white;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 0px 4px rgb(150, 147, 147);
+  border-radius: 4px;
+  margin-top: 5px;
+  padding: 8px;
+}
+
+.project-form .form-container .input-project-image-group p {
+  background-color: #e4e4e4;
+  color: #b2abab;
+  border-radius: 3px;
+}
+
+.project-form .form-container .input-project-image-group input {
+  width: 100%;
+}
+
+.project-form .form-container .input-project-image-group img {
+  transform: rotate(40deg);
+}
+
+.project-form form .input-project-image-group label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-form form .button-group {
+  text-align: right;
+}
+
+.project-form form button {
+  margin-top: 40px;
+  padding: 5px 25px;
+  background: #111727;
+  border-radius: 115px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Project */
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  background-color: #f8f8f8;
+}
+
+.project-list .project-list-items {
+  width: 95%;
+}
+
+.project-list .project-list-items h1 {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.project-list-items .project-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.project-list-items .project-group .project-item {
+  width: 31%;
+  height: 2%;
+  margin: 15px;
+  padding: 13px;
+  border: none;
+  box-shadow: 0px 0px 25px rgba(196, 188, 188, 0.747);
+  border-radius: 8px;
+  text-align: justify;
+}
+
+.project-list-items .project-item .item a {
+  text-decoration: none;
+  color: black;
+}
+
+.project-list-items .project-item .item a:hover {
+  color: blue;
+}
+
+.project-list-items .project-item .item h3 {
+  margin: 2px 0px;
+}
+
+.project .project-list .item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.project .item #duration {
+  color: #514a4a;
+  margin-bottom: 20px;
+}
+
+.project .project-list .logo-group {
+  margin-top: 20px;
+}
+
+.project .project-list .logo-group img {
+  width: 25px;
+  margin-right: 15px;
+}
+
+.project .project-list .btn-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.project .project-list .btn-group button {
+  width: 49%;
+  padding: 7px 0px;
+  border: none;
+  border-radius: 10px;
+  background-color: #111727;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* detail project */
+
+.container-detail-project {
+  background-color: #e3e7eb;
+  display: flex;
+  justify-content: center;
+}
+
+.container-detail-project .container-project {
+  width: 90%;
+}
+
+.container-detail-project .container-project h1 {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.container-detail-project .content-project {
+  margin-top: 50px;
+}
+
+.container-detail-project .content-project p {
+  margin-top: 25px;
+  text-align: justify;
+}
+
+.container-detail-project .info-project {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-detail-project .info-project .image-project {
+  width: 72%;
+}
+
+.container-detail-project .image-project img {
+  width: 100%;
+}
+
+.container-detail-project .detail-info-project {
+  width: 22%;
+}
+
+.container-detail-project .detail-info-project img {
+  width: 30px;
+}
+
+.container-detail-project .detail-info-project h3 {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.container-detail-project .detail-info-project .detail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.container-detail-project .detail-info-project .detail img {
+  margin-right: 10px;
+}
+
+.container-detail-project .detail-info-project .detail label {
+  color: #50514a;
+  margin-right: 30px;
+}

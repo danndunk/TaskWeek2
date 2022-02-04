@@ -1,0 +1,105 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dce0e4;
+  font-family: "Dongle", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  background-color: #f4f3f3;
+  height: 7vh;
+}
+
+.left-navbar {
+  padding-left: 90px;
+}
+
+.right-navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 90px;
+}
+
+nav div {
+  flex: 50%;
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  padding-left: 40px;
+}
+
+nav .right-navbar a {
+  color: white;
+  background-color: #111727;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+/* Formulir */
+.formulir {
+  width: 25%;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.formulir div input,
+.formulir div textarea,
+.formulir div select {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 4px;
+  border: none;
+  box-shadow: 0px 0px 3px rgb(151, 148, 148);
+}
+
+.formulir div label {
+  font-size: 18px;
+}
+
+.formulir form {
+  margin-top: 50px;
+}
+
+.formulir div {
+  margin-top: 15px;
+}
+.formulir div textarea {
+  resize: none;
+}
+
+.formulir h1 {
+  text-align: center;
+}
+
+.formulir .submit {
+  background-color: #111727;
+  color: white;
+  margin-top: 20px;
+  padding: 4px 23px;
+  float: right;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
