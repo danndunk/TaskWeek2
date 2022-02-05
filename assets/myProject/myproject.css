@@ -213,6 +213,7 @@ textarea,
   box-shadow: 0px 0px 25px rgba(196, 188, 188, 0.747);
   border-radius: 8px;
   text-align: justify;
+  background-color: white;
 }
 
 .project-list-items .project-item .item a {
