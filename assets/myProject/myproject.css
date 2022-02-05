@@ -143,13 +143,13 @@ textarea,
   box-shadow: 0px 0px 4px rgb(150, 147, 147);
   border-radius: 4px;
   margin-top: 5px;
-  padding: 8px;
 }
 
 .project-form .form-container .input-project-image-group p {
   background-color: #e4e4e4;
   color: #b2abab;
   border-radius: 3px;
+  padding: 6px;
 }
 
 .project-form .form-container .input-project-image-group input {
