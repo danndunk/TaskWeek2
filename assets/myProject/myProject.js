@@ -13,44 +13,16 @@ function addProject(event) {
 
   let duration = new Date(endDate) - new Date(startDate);
 
-  let nodeJS = document.getElementById("choose-nodejs").checked;
-  let reactJS = document.getElementById("choose-reactjs").checked;
-  let nextJS = document.getElementById("choose-nextjs").checked;
-  let typeScript = document.getElementById("choose-typescript").checked;
-
-  if (nodeJS) {
-    nodeJS = document.getElementById("choose-nodejs").value;
-  } else {
-    nodeJS = "";
-  }
-
-  if (reactJS) {
-    reactJS = document.getElementById("choose-reactjs").value;
-  } else {
-    reactJS = "";
-  }
-
-  if (nextJS) {
-    nextJS = document.getElementById("choose-nextjs").value;
-  } else {
-    nextJS = "";
-  }
-
-  if (typeScript) {
-    typeScript = document.getElementById("choose-typescript").value;
-  } else {
-    typeScript = "";
-  }
+  let iconTech = Array.from(
+    document.querySelectorAll("input[type=checkbox]:checked")
+  ).map((item) => item.value);
 
   let project = {
     projectName,
     startDate,
     endDate,
     duration,
-    nodeJS,
-    reactJS,
-    nextJS,
-    typeScript,
+    iconTech,
     description,
     projectImage,
   };
@@ -69,6 +41,10 @@ function renderProject() {
   let projectGroup = document.getElementById("project-group");
 
   for (let i = 0; i < lengthProjects; i++) {
+    let icon = projects[i].iconTech.map(
+      (item) => `<img src="../image/icon/${item}">`
+    );
+
     projectGroup.innerHTML += `<div class="project-item">
         <div class="item">
           <img src="${projects[i].projectImage}" alt="" />
@@ -79,10 +55,8 @@ function renderProject() {
           </a>
           <p id="duration">durasi : ${getDurationTime(projects[i].duration)}</p>
           <p id="description">${projects[i].description}</p>
-          <div class="logo-group">
-            <img src="../image/icon/playstore.png" alt="" />
-            <img src="../image/icon/android.png" alt="" />
-            <img src="../image/icon/java.png" alt="" />
+          <div class="logo-group" id="logo-group">
+            ${icon}
           </div>
           <div class="btn-group">
             <button class="btn-edit">Edit</button>

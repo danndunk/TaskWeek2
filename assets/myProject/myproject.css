@@ -131,6 +131,12 @@ textarea,
   color: #514a4a;
 }
 
+.project-form form .technologies-container input {
+  box-shadow: 0px 0px 4px rgb(150, 147, 147);
+  width: 17px;
+  height: 17px;
+}
+
 .project-form form .technologies-container .left-choose {
   margin-right: 80px;
 }
