@@ -11,18 +11,46 @@ function addProject(event) {
 
   projectImage = URL.createObjectURL(projectImage.files[0]);
 
-  //   let nodeJS = document.getElementById("choose-nodejs").value;
-  //   let reactJS = document.getElementById("choose-reactjs").value;
-  //   let nextJS = document.getElementById("choose-nextjs").value;
-  //   let typeScript = document.getElementById("choose-typescript").value;
-
   let duration = new Date(endDate) - new Date(startDate);
+
+  let nodeJS = document.getElementById("choose-nodejs").checked;
+  let reactJS = document.getElementById("choose-reactjs").checked;
+  let nextJS = document.getElementById("choose-nextjs").checked;
+  let typeScript = document.getElementById("choose-typescript").checked;
+
+  if (nodeJS) {
+    nodeJS = document.getElementById("choose-nodejs").value;
+  } else {
+    nodeJS = "";
+  }
+
+  if (reactJS) {
+    reactJS = document.getElementById("choose-reactjs").value;
+  } else {
+    reactJS = "";
+  }
+
+  if (nextJS) {
+    nextJS = document.getElementById("choose-nextjs").value;
+  } else {
+    nextJS = "";
+  }
+
+  if (typeScript) {
+    typeScript = document.getElementById("choose-typescript").value;
+  } else {
+    typeScript = "";
+  }
 
   let project = {
     projectName,
     startDate,
     endDate,
     duration,
+    nodeJS,
+    reactJS,
+    nextJS,
+    typeScript,
     description,
     projectImage,
   };
