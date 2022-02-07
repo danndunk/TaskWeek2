@@ -56,7 +56,7 @@ function renderProject() {
           <p id="duration">durasi : ${getDurationTime(projects[i].duration)}</p>
           <p id="description">${projects[i].description}</p>
           <div class="logo-group" id="logo-group">
-            ${icon}
+            ${icon.join(" ")}
           </div>
           <div class="btn-group">
             <button class="btn-edit">Edit</button>
